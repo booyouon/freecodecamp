@@ -1,11 +1,3 @@
-const submit = document.querySelector("#submitBtn");
-const entry = document.querySelector("#entry");
-let text = document.querySelector("#floatingTextarea2").value;
-
-submit.addEventListener('click', () => {
-  entry.textContent = text;
-})
-
 function palindrome(str) {
   let word1 = str.toLowerCase().replace(/[^a-zA-Z1-9]/g,'').split('').reverse().join('');
 /* 
